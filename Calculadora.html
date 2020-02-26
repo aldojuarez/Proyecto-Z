@@ -5,34 +5,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <script src="calcu.js"></script>
+    <link rel="stylesheet" href="css.css">
     <title>Calculadora 1</title>
 </head>
 <body>
-    <div>
-        <input type="text" value="" disabled id="pantalla" />
+    <div class="wrab cal">
+        <input type="text" value="" disabled id="pantalla" class="screen outcome" />
         <div>
-            <button type="button" value="+" onclick="calculos(value)">+</button>
-            <button type="button" value="-" onclick="calculos(value)">-</button>
-            <button type="button" value="*" onclick="calculos(value)">&times;</button>
-            <button type="button" value="/" onclick="calculos(value)">&divide;</button> <br>
+            <button type="button" value="+" onclick="calculos(value)" class="buttons">+</button>
+            <button type="button" value="-" onclick="calculos(value)" class="buttons">-</button>
+            <button type="button" value="*" onclick="calculos(value)" class="buttons">&times;</button>
+            <button type="button" value="/" onclick="calculos(value)" class="buttons">&divide;</button>
 
-            <button type="button" value="7" onclick="calculos(value)">7</button>
-            <button type="button" value="8" onclick="calculos(value)">8</button>
-            <button type="button" value="9"onclick="calculos(value)">9</button> <br>
+            <button type="button" value="=" onclick="resultado()" class="buttons tall" >=</button>
+            <button type="button" value="7" onclick="calculos(value)" class="buttons">7</button>
+            <button type="button" value="8" onclick="calculos(value)" class="buttons">8</button>
+            <button type="button" value="9"onclick="calculos(value)" class="buttons">9</button>
+            
 
-            <button type="button" value="4" onclick="calculos(value)">4</button>
-            <button type="button" value="5" onclick="calculos(value)">5</button>
-            <button type="button" value="6" onclick="calculos(value)">6</button> <br>
+            <button type="button" value="4" onclick="calculos(value)" class="buttons">4</button>
+            <button type="button" value="5" onclick="calculos(value)" class="buttons">5</button>
+            <button type="button" value="6" onclick="calculos(value)" class="buttons">6</button>
 
-            <button type="button" value="1" onclick="calculos(value)">1</button>
-            <button type="button" value="2" onclick="calculos(value)">2</button>
-            <button type="button" value="3" onclick="calculos(value)">3</button> <br>
+            
+            <button type="button" value="1" onclick="calculos(value)" class="buttons">1</button>
+            <button type="button" value="2" onclick="calculos(value)" class="buttons">2</button>
+            <button type="button" value="3" onclick="calculos(value)" class="buttons">3</button>
+            <button type="button" value="0" onclick="calculos(value)" class="buttons val ">0</button>
 
-            <button type="button" value="0" onclick="calculos(value)">0</button>
-            <button type="button" value="." onclick="calculos(value)">.</button>
-            <button type="button" value="AllClear" onclick="limpia()">AC</button>
 
-            <button type="button" value="=" onclick="resultado()">=</button>
+            <button type="button" value="." onclick="calculos(value)" class="buttons">.</button>
+            <button type="button" value="AllClear" onclick="limpia()" class="buttons clear">AC</button>
+
+            
         </div>
     </div>
 </body>
