@@ -3,7 +3,7 @@
     margin:40px auto 0;
    }
    .cal{
-    width:480px;
+    width:450px;
     height:auto;
     padding:10px 0;
     margin: auto;
@@ -22,9 +22,9 @@
     text-align: center;
    }
    .screen{
-    width:424px;
+    width:420px;
     height:93px;
-    margin: 12px auto 30px;
+    margin:12px 30px 12px 15px;
     padding:15px 20px;
     color:#c0c0c0;
     text-align: right;
